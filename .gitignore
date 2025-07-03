@@ -2,3 +2,5 @@ encodings.xml
 misc.xml
 modules.xml
 vcs.xml
+__pycache__/
+.idea/
