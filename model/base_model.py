@@ -12,9 +12,13 @@ load_dotenv()
 # Define the base for declarative models
 Base = declarative_base()
 
-userdb = os.getenv('')
+userdb = os.getenv('DB_USER')
+dbpass = os.getenv('DB_PASSWD')
+dbhost = os.getenv('DB_HOST')
+dbname = os.getenv('DB_NAME')
+dbtype = os.getenv('DB_TYPE')
 
-DATABASE_URL = "postgresql+psycopg://malaut4t:isthatokay@31.97.60.228/sampletry"
+DATABASE_URL = f"{dbtype}+psycopg://{userdb}:{dbpass}@{dbhost}/{dbname}"
 engine = create_engine(DATABASE_URL, echo=False)
 
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
