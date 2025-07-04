@@ -5,37 +5,3 @@ Create 2 Product with name Nametest1 , OtherTest
 Create 2 Item with name Nametest , Othername
 
 Fetch ALL USER
-All Users: [<User(id=1, name=Alice, email=alice1@example.com, created_at=2025-07-02 12:51:56.821114, updated_at=2025-07-02 12:51:56.821114)>, <User(id=2, name=Bob, email=bob1@example.com, created_at=2025-07-02 12:51:57.318114, updated_at=2025-07-02 12:51:57.318114)>]
-
-Where condition of User with name = Bob
-User Bob: <User(id=2, name=Bob, email=bob1@example.com, created_at=2025-07-02 12:51:57.318114, updated_at=2025-07-02 12:51:57.318114)>
-
-Where condition of User id = 1
-User with ID 1: <User(id=1, name=Alice, email=alice1@example.com, created_at=2025-07-02 12:51:56.821114, updated_at=2025-07-02 12:51:56.821114)>
-
-Fetch ALL Product
-All all_products :
-<Product(id=1, name=Nametest1, description=Text Description, owner_id=1, harga=20000, variation=['Blue', 'Red'], created_at=2025-07-02 12:51:57.711114, updated_at=2025-07-02 12:51:57.711114)>
-<Product(id=2, name=OtherTest, description=Text Description, owner_id=1, harga=120000, variation=['Blue', 'White', 'Greem'], created_at=2025-07-02 12:51:58.101140, updated_at=2025-07-02 12:51:58.101140)>
-
-Where condition of array of string(variation) which contains Blue
-Search all_products with variation Blue :
-<Product(id=1, name=Nametest1, description=Text Description, owner_id=1, harga=20000, variation=['Blue', 'Red'], created_at=2025-07-02 12:51:57.711114, updated_at=2025-07-02 12:51:57.711114)>
-<Product(id=2, name=OtherTest, description=Text Description, owner_id=1, harga=120000, variation=['Blue', 'White', 'Greem'], created_at=2025-07-02 12:51:58.101140, updated_at=2025-07-02 12:51:58.101140)>
-
-Where condition of array of string(variation) which contains Black
-Search all_products with variation Black :
-
-Where condition product harga > 30000
-Search all_products with harga more than 30000 :
-<Product(id=2, name=OtherTest, description=Text Description, owner_id=1, harga=120000, variation=['Blue', 'White', 'Greem'], created_at=2025-07-02 12:51:58.101140, updated_at=2025-07-02 12:51:58.101140)>
-
-Fetch ALL Item
-All all_Item :
-<Item(id=1, title=Nametest, description=Text Description, owner_id=1, attribute={'color': 'blue', 'harga': 20000, 'volume': 35, 'features': ['lightweight', 'waterproof']}, created_at=2025-07-02 12:51:58.495142, updated_at=2025-07-02 12:51:58.495142)>
-<Item(id=2, title=Othername, description=Text Description, owner_id=1, attribute={'color': 'red', 'harga': 120000, 'volume': 88, 'features': ['heavy', 'waterproof']}, created_at=2025-07-02 12:51:58.913112, updated_at=2025-07-02 12:51:58.913112)>
-
-Grouped User Names: [('Alice',), ('Bob',)]
-
-Raw Grouped Counts: [('Alice', 1), ('Bob', 1)]
-
