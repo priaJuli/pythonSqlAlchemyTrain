@@ -4,3 +4,4 @@ modules.xml
 vcs.xml
 __pycache__/
 .idea/
+.env
